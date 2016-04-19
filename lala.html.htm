@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>链接样式</title>
+  <style>
+    a{
+     font-size:2em;
+    }
+    a:link{
+      color:blue;
+      background:pink;
+      text-decoration:none;
+    }
+    a:visited{
+      color:green;
+    }
+    a:hover{
+      color:black;
+    }
+    a:active{
+      color:blue;
+    }
+    .c{
+      width: 100px;
+      height: 160px;
+      border: 1px solid #000;
+      position: relative;
+    }
+    .c .phone{
+      width:245px;
+      height: 300px;
+      background: url("http://www.qqya.com/userimg/2730/110Q3164K4.jpg") no-repeat;
+      position: absolute;
+      left:600px;
+      top:-90px;
+      opacity: 0;
+      transition:all 1s;
+    }
+    .c:hover .phone{
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <a href="//www.taobao.com">淘宝</a>
+  <div class="c">
+    <div class="phone"></div>
+  </div>
+</body>
+</html>
